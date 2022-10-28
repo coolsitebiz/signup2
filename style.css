@@ -1,0 +1,43 @@
+:root {
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  border: 1px solid red;
+  padding: 1.5rem;
+}
+
+.title-wrap {
+  flex: 1 1 30%;
+  background: url('./eugen-rusakov-rFECDmH-xBk-unsplash.jpg');
+  background-size: cover;
+  background-position: center left;
+  height: 100vh;
+}
+
+@media (max-width: 600px) {
+  .main-wrapper {
+    flex-direction: column;
+  }
+
+  .title-wrap {
+    width: 100vw;
+    height: 10rem;
+  }
+}
+
+.form-wrap {
+  flex: 1 1 70%;
+}
