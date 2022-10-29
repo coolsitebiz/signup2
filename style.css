@@ -1,4 +1,8 @@
 :root {
+  @font-face {
+    font-family: 'PoiretvOne';
+    src: url('https://fonts.googleapis.com/css2?family=Poiret+One');
+  }
 }
 
 *,
@@ -7,6 +11,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: rgb(86, 152, 252);
 }
 
 .main-wrapper {
@@ -31,6 +39,8 @@
   background-position: top left;
   height: 100vh;
   display: flex;
+  font-family: 'Poiret One';
+  font-weight: bold;
 }
 
 @media (max-width: 600px) {
@@ -51,8 +61,8 @@
   align-items: center;
   margin-top: 5rem;
   color: white;
-  font-family: sans-serif;
   font-size: 1.5rem;
+  user-select: none;
 }
 
 @media (max-width: 600px) {
@@ -66,9 +76,14 @@
 .logo-block > img {
   max-width: 5rem;
   padding: 0.5rem;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
 }
 
 .form-wrap {
   flex: 1 1 70%;
   padding: 1.5rem;
+  font-weight: bold;
 }
