@@ -21,9 +21,85 @@
         </div>
       </div>
       <div class="container form-wrap">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint
-        dignissimos quaerat! Eum voluptate assumenda, rem aliquid magnam
-        pariatur soluta repudiandae et dicta molestiae!
+        <div class="form-top">
+          <div class="form-top-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sint
+            dignissimos quaerat! Eum voluptate assumenda, rem aliquid magnam
+            pariatur soluta repudiandae et dicta molestiae!
+          </div>
+        </div>
+        <div class="form-main">
+          <form action="">
+            <div class="inputs">
+              <div>
+                <label for="fname">First name</label><br />
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  class="input name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="lname">Last name</label><br />
+                <input
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  class="input name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email</label><br />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="input email"
+                  required
+                />
+              </div>
+              <div>
+                <label for="tel">Telephone</label><br />
+                <input
+                  type="text"
+                  name="tel"
+                  id="tel"
+                  class="input telephone"
+                  pattern="^\d{10}$"
+                  title="Should be a 10 digit telephone number"
+                  required
+                />
+              </div>
+              <div>
+                <label for="password">Password</label><br />
+                <input
+                  type="password"
+                  id="pass"
+                  name="pass"
+                  class="input error"
+                  required
+                />
+              </div>
+              <div>
+                <label for="pass-confirm">Confirm password</label><br />
+                <input
+                  type="password"
+                  name="pass-confirm"
+                  id="pass-confirm"
+                  class="input error"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-submit">
+              <button id="submit">Create Account</button>
+              <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </body>
