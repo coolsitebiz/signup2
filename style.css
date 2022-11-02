@@ -75,7 +75,8 @@ body {
 
 .logo-block > img {
   padding: 0.5rem;
-  width: 5rem;
+  width: 80px;
+  height: 101px;
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
@@ -133,7 +134,7 @@ body {
   }
 
   .input {
-    width: 30ch;
+    width: 25ch;
   }
 }
 
