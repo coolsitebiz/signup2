@@ -1,7 +1,7 @@
 :root {
   @font-face {
-    font-family: "PoiretvOne";
-    src: url("https://fonts.googleapis.com/css2?family=Poiret+One");
+    font-family: 'PoiretvOne';
+    src: url('https://fonts.googleapis.com/css2?family=Poiret+One');
   }
 }
 
@@ -22,33 +22,19 @@ body {
   flex-wrap: wrap;
 }
 
-@media (max-width: 600px) {
-  .main-wrapper {
-    flex-direction: column;
-  }
-}
-
 .container {
   border: none;
 }
 
 .title-wrap {
   flex: 1 1 30%;
-  background: url("./wolfgang-hasselmann-B9mJpziBi-g-unsplash.jpg");
+  background: url('./wolfgang-hasselmann-B9mJpziBi-g-unsplash.jpg');
   background-size: cover;
   background-position: top left;
   height: 100vh;
   display: flex;
-  font-family: "Poiret One";
+  font-family: 'Poiret One';
   font-weight: bold;
-}
-
-@media (max-width: 600px) {
-  .title-wrap {
-    width: 100vw;
-    height: 10rem;
-    background-size: cover;
-  }
 }
 
 .logo-block {
@@ -65,14 +51,6 @@ body {
   user-select: none;
 }
 
-@media (max-width: 600px) {
-  .logo-block {
-    margin-top: 0;
-    height: 6rem;
-    flex-direction: row;
-  }
-}
-
 .logo-block > img {
   padding: 0.5rem;
   width: 80px;
@@ -86,7 +64,7 @@ body {
 .form-wrap {
   flex: 1 1 70%;
   font-weight: bold;
-  font-family: "Poiret One", sans-serif;
+  font-family: 'Poiret One', sans-serif;
 }
 
 .form-top {
@@ -102,21 +80,15 @@ body {
   max-width: 600px;
 }
 
-@media (max-width: 600px) {
-  .form-top {
-    height: auto;
-  }
-}
-
 .form-main {
   padding: 1.5em;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .inputs {
   display: flex;
   flex-wrap: wrap;
-  max-width: 750px;
+  max-width: 500px;
 }
 
 .input {
@@ -126,16 +98,7 @@ body {
   padding: 0.2rem;
   outline: none;
   border-radius: 5px;
-}
-
-@media (max-width: 600px) {
-  .inputs {
-    flex-direction: column;
-  }
-
-  .input {
-    width: 25ch;
-  }
+  border: 1px solid #444;
 }
 
 button {
@@ -153,4 +116,48 @@ button:active {
 
 button:hover {
   cursor: pointer;
+}
+
+@media (max-height: 500px) {
+  .form-top {
+    display: none;
+  }
+
+  .input {
+    font-size: 0.8rem;
+    width: 25ch;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .inputs {
+    flex-direction: column;
+  }
+
+  .input {
+    width: 100%;
+  }
+  .form-top {
+    height: auto;
+  }
+
+  .logo-block {
+    margin-top: 0;
+    height: 6rem;
+    flex-direction: row;
+  }
+
+  .title-wrap {
+    width: 100vw;
+    height: 10rem;
+    background-size: cover;
+  }
+
+  .main-wrapper {
+    flex-direction: column;
+  }
 }
