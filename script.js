@@ -10,6 +10,7 @@ function passesMatch() {
   }
 }
 
+//change class based on passMatch status
 function setError() {
   if (passesMatch()) {
     pass.classList.remove('error');
