@@ -88,7 +88,7 @@ body {
 .inputs {
   display: flex;
   flex-wrap: wrap;
-  max-width: 500px;
+  max-width: 550px;
 }
 
 .input {
@@ -99,6 +99,14 @@ body {
   outline: none;
   border-radius: 5px;
   border: 1px solid #444;
+}
+
+.input:focus {
+  border: 1px solid blue;
+}
+
+.error {
+  border: 1px solid red;
 }
 
 button {
@@ -118,11 +126,13 @@ button:hover {
   cursor: pointer;
 }
 
-@media (max-height: 500px) {
+@media (max-height: 625px) {
   .form-top {
     display: none;
   }
+}
 
+@media (max-height: 500px) {
   .input {
     font-size: 0.8rem;
     width: 25ch;
